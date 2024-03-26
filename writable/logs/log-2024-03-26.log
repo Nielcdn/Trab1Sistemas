@@ -1,0 +1,1421 @@
+ERROR - 2024-03-26 17:02:20 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-03-26 17:02:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+ERROR - 2024-03-26 17:05:46 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-03-26 17:05:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+ERROR - 2024-03-26 17:06:16 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-03-26 17:06:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+CRITICAL - 2024-03-26 17:12:13 --> ErrorException: Undefined variable $db
+in APPPATH/Config/Database.php on line 87.
+ 1 APPPATH/Config/Database.php(87): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(311): include_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Config/Database.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 5 SYSTEMPATH/Debug/Toolbar/Collectors/Database.php(256): CodeIgniter\Autoloader\Autoloader->loadClass()
+ 6 SYSTEMPATH/Debug/Toolbar/Collectors/Database.php(73): CodeIgniter\Debug\Toolbar\Collectors\Database->getConnections()
+ 7 SYSTEMPATH/Debug/Toolbar.php(65): CodeIgniter\Debug\Toolbar\Collectors\Database->__construct()
+ 8 SYSTEMPATH/Config/Services.php(779): CodeIgniter\Debug\Toolbar->__construct()
+ 9 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::toolbar()
+10 SYSTEMPATH/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+11 SYSTEMPATH/Config/Services.php(774): CodeIgniter\Config\BaseService::getSharedInstance()
+12 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::toolbar()
+13 APPPATH/Config/Events.php(47): CodeIgniter\Config\BaseService::__callStatic()
+14 SYSTEMPATH/Events/Events.php(154): CodeIgniter\Events\Events::Config\{closure}()
+15 SYSTEMPATH/CodeIgniter.php(442): CodeIgniter\Events\Events::trigger()
+16 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+17 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+CRITICAL - 2024-03-26 17:12:16 --> ErrorException: Undefined variable $db
+in APPPATH/Config/Database.php on line 87.
+ 1 APPPATH/Config/Database.php(87): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(311): include_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Config/Database.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 5 SYSTEMPATH/Debug/Toolbar/Collectors/Database.php(256): CodeIgniter\Autoloader\Autoloader->loadClass()
+ 6 SYSTEMPATH/Debug/Toolbar/Collectors/Database.php(73): CodeIgniter\Debug\Toolbar\Collectors\Database->getConnections()
+ 7 SYSTEMPATH/Debug/Toolbar.php(65): CodeIgniter\Debug\Toolbar\Collectors\Database->__construct()
+ 8 SYSTEMPATH/Config/Services.php(779): CodeIgniter\Debug\Toolbar->__construct()
+ 9 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::toolbar()
+10 SYSTEMPATH/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+11 SYSTEMPATH/Config/Services.php(774): CodeIgniter\Config\BaseService::getSharedInstance()
+12 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::toolbar()
+13 APPPATH/Config/Events.php(47): CodeIgniter\Config\BaseService::__callStatic()
+14 SYSTEMPATH/Events/Events.php(154): CodeIgniter\Events\Events::Config\{closure}()
+15 SYSTEMPATH/CodeIgniter.php(442): CodeIgniter\Events\Events::trigger()
+16 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+17 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+CRITICAL - 2024-03-26 17:12:59 --> Error: Call to undefined function Config\mysql_connect()
+in APPPATH/Config/Database.php on line 86.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(311): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 4 SYSTEMPATH/Debug/Toolbar/Collectors/Database.php(256): CodeIgniter\Autoloader\Autoloader->loadClass()
+ 5 SYSTEMPATH/Debug/Toolbar/Collectors/Database.php(73): CodeIgniter\Debug\Toolbar\Collectors\Database->getConnections()
+ 6 SYSTEMPATH/Debug/Toolbar.php(65): CodeIgniter\Debug\Toolbar\Collectors\Database->__construct()
+ 7 SYSTEMPATH/Config/Services.php(779): CodeIgniter\Debug\Toolbar->__construct()
+ 8 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::toolbar()
+ 9 SYSTEMPATH/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+10 SYSTEMPATH/Config/Services.php(774): CodeIgniter\Config\BaseService::getSharedInstance()
+11 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::toolbar()
+12 APPPATH/Config/Events.php(47): CodeIgniter\Config\BaseService::__callStatic()
+13 SYSTEMPATH/Events/Events.php(154): CodeIgniter\Events\Events::Config\{closure}()
+14 SYSTEMPATH/CodeIgniter.php(442): CodeIgniter\Events\Events::trigger()
+15 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+16 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+ERROR - 2024-03-26 17:14:02 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-03-26 17:14:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+ERROR - 2024-03-26 17:15:33 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-03-26 17:15:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+ERROR - 2024-03-26 17:15:34 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-03-26 17:15:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+ERROR - 2024-03-26 17:15:59 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-03-26 17:15:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+ERROR - 2024-03-26 17:22:55 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-03-26 17:22:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+ERROR - 2024-03-26 17:23:02 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-03-26 17:23:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+ERROR - 2024-03-26 17:24:30 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-03-26 17:24:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+ERROR - 2024-03-26 17:24:33 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-03-26 17:24:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+ERROR - 2024-03-26 17:24:46 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-03-26 17:24:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+ERROR - 2024-03-26 17:30:12 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-03-26 17:30:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+ERROR - 2024-03-26 17:30:38 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-03-26 17:30:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+ERROR - 2024-03-26 17:30:45 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-03-26 17:30:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+ERROR - 2024-03-26 17:36:38 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-03-26 17:36:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+ERROR - 2024-03-26 17:39:13 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-03-26 17:39:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+ERROR - 2024-03-26 17:40:41 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-03-26 17:40:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+ERROR - 2024-03-26 17:42:14 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-03-26 17:42:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+CRITICAL - 2024-03-26 17:48:52 --> Error: Class "App\Controllers\AutofmoveisModel" not found
+in APPPATH/Controllers/Home.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+CRITICAL - 2024-03-26 17:49:01 --> Error: Class "App\Controllers\AutofmoveisModel" not found
+in APPPATH/Controllers/Home.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+CRITICAL - 2024-03-26 17:54:10 --> Error: Class "App\Controllers\AutofmoveisModel" not found
+in APPPATH/Controllers/Home.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+ERROR - 2024-03-26 17:54:23 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-03-26 17:54:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+ERROR - 2024-03-26 17:57:23 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-03-26 17:57:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+ERROR - 2024-03-26 17:58:22 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-03-26 17:58:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+ERROR - 2024-03-26 18:05:29 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-03-26 18:05:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+ERROR - 2024-03-26 18:07:51 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-03-26 18:07:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+ERROR - 2024-03-26 18:07:58 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-03-26 18:07:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+CRITICAL - 2024-03-26 18:08:19 --> ParseError: syntax error, unexpected identifier "pubglic", expecting "function" or "const"
+in APPPATH/Config/Database.php on line 27.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 SYSTEMPATH/Debug/Toolbar/Collectors/Database.php(256): CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/Debug/Toolbar/Collectors/Database.php(73): CodeIgniter\Debug\Toolbar\Collectors\Database->getConnections()
+ 5 SYSTEMPATH/Debug/Toolbar.php(65): CodeIgniter\Debug\Toolbar\Collectors\Database->__construct()
+ 6 SYSTEMPATH/Config/Services.php(779): CodeIgniter\Debug\Toolbar->__construct()
+ 7 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::toolbar()
+ 8 SYSTEMPATH/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+ 9 SYSTEMPATH/Config/Services.php(774): CodeIgniter\Config\BaseService::getSharedInstance()
+10 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::toolbar()
+11 APPPATH/Config/Events.php(47): CodeIgniter\Config\BaseService::__callStatic()
+12 SYSTEMPATH/Events/Events.php(154): CodeIgniter\Events\Events::Config\{closure}()
+13 SYSTEMPATH/CodeIgniter.php(442): CodeIgniter\Events\Events::trigger()
+14 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+15 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+ERROR - 2024-03-26 18:08:27 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-03-26 18:08:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+ERROR - 2024-03-26 18:12:52 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-03-26 18:12:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+ERROR - 2024-03-26 18:20:25 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-03-26 18:20:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+ERROR - 2024-03-26 18:24:43 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/aluno/Downloads/AulaCRUDCodeigniter-main/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-03-26 18:24:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+CRITICAL - 2024-03-26 18:30:21 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Views/formularioEdicao.php on line 26.
+ 1 APPPATH/Views/formularioEdicao.php(26): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Views/formularioEdicao.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(75): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->editarItem()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+CRITICAL - 2024-03-26 18:30:40 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Views/formularioEdicao.php on line 26.
+ 1 APPPATH/Views/formularioEdicao.php(26): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Views/formularioEdicao.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(75): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->editarItem()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+CRITICAL - 2024-03-26 19:23:40 --> ErrorException: include(./visual.css): Failed to open stream: No such file or directory
+in APPPATH/Views/outra_view.php on line 7.
+ 1 APPPATH/Views/outra_view.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/outra_view.php(7): include()
+ 3 SYSTEMPATH/View/View.php(228): include('/home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Views/outra_view.php')
+ 4 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Home.php(31): view()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+CRITICAL - 2024-03-26 19:23:50 --> ErrorException: include(./visual.css): Failed to open stream: No such file or directory
+in APPPATH/Views/outra_view.php on line 7.
+ 1 APPPATH/Views/outra_view.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/outra_view.php(7): include()
+ 3 SYSTEMPATH/View/View.php(228): include('/home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Views/outra_view.php')
+ 4 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Home.php(31): view()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+CRITICAL - 2024-03-26 19:24:35 --> ErrorException: include(./visual.css): Failed to open stream: No such file or directory
+in APPPATH/Views/outra_view.php on line 6.
+ 1 APPPATH/Views/outra_view.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/outra_view.php(6): include()
+ 3 SYSTEMPATH/View/View.php(228): include('/home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Views/outra_view.php')
+ 4 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Home.php(31): view()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
+CRITICAL - 2024-03-26 19:25:56 --> ErrorException: include(/visual.css): Failed to open stream: No such file or directory
+in APPPATH/Views/outra_view.php on line 6.
+ 1 APPPATH/Views/outra_view.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/outra_view.php(6): include()
+ 3 SYSTEMPATH/View/View.php(228): include('/home/aluno/Downloads/AulaCRUDCodeigniter-main/app/Views/outra_view.php')
+ 4 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Home.php(31): view()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/aluno/Downloads/AulaCRUDCodeigniter-main/public/index.php')
