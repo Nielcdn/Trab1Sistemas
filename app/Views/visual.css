@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;1,100&display=swap');
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: grid;
+        justify-content: center;
+    }
+
+    iframe {
+        min-height: 200px;
+        width: 100%
+    }
+
+    figure {
+        min-height: 200px;
+    }
+
+    footer {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    nav {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto auto auto auto auto;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    iframe {
+        min-height: 400px;
+        width: 70%;
+    }
+
+    figure {
+        min-height: 400px;
+    }
+
+    footer {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto auto auto auto;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+}
+
+@keyframes menu {
+    0% {
+        text-shadow: 1px 10px 2px rgb(153, 153, 153), 1px -10px 2px rgb(153, 153, 153)
+    }
+
+    100% {
+        text-shadow: 1px 0px 3px rgb(56, 56, 56), 1px 0px 3px rgb(56, 56, 56)
+    }
+}
+
+@keyframes banner {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+html {
+    margin: 0px;
+    padding: 0px;
+    background-image: linear-gradient(burlywood, rgb(236, 173, 91));
+    font-family: 'Barlow', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-size: 26px;
+    text-align: center;
+    text-decoration: underline
+}
+
+h2 {
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+}
+
+h3 {
+    text-align: center;
+    font-size: 200%;
+}
+
+h4 {
+    font-size: 21px;
+    text-align: left;
+    text-decoration: none;
+}
+
+p {
+    font-size: 14px;
+    text-align: left
+}
+
+
+
+body {
+    width: 100%;
+    margin: 0px;
+    background-image: linear-gradient(burlywood, rgb(236, 173, 91))
+}
+
+
+header {
+    width: 100%;
+    border-top: 2px solid rgb(155, 82, 69);
+    border-bottom: 2px solid rgb(155, 82, 69);
+    background-image: linear-gradient(rgb(235, 114, 84), rgb(165, 71, 54));
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+
+.logo {
+    max-width: 100%;
+    max-height: 5%;
+}
+
+.banner {
+    max-width: 75%;
+    margin: auto;
+    border: 2px;
+    font-family: 'Ms Madi', cursive;
+    animation: banner 4s 0s 1 normal;
+}
+
+.login {
+    margin: 5px;
+    font-size: 16px;
+    align-self: flex-start;
+}
+
+
+nav {
+    width: 100%;
+    padding: 10px 0px 25px 0px;
+    border-top: 2px solid rgb(126, 68, 58);
+    border-bottom: 2px solid rgb(126, 68, 58);
+    background-image: linear-gradient(rgb(146, 146, 146), rgb(177, 177, 177));
+    background-color: rgb(185, 161, 161);
+}
+
+.menu {
+    height: 10%;
+    padding-top: 7.5px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.menu:hover {
+    animation: menu 1s linear 0s 1 normal;
+}
+
+.menu:hover,
+.login:hover {
+    text-decoration: underline
+}
+
+main {
+    width: 100%;
+    border-top: 4px inset rgb(245, 220, 174);
+    border-bottom: 4px inset rgb(245, 220, 174);
+    background-image: linear-gradient(wheat, rgb(230, 173, 100))
+}
+
+.pesquisa {
+    min-height: 25%;
+    margin: 5px;
+    display: grid;
+}
+
+fieldset {
+    border-width: 0px;
+    margin-left: 20px;
+}
+
+input[type=search] {
+    width: 60%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+input[type=submit] {
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    margin-bottom: 10px;
+    background: url("../img/lupa.png") no-repeat;
+}
+
+
+.pop {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    padding: 5px;
+    border: 2px solid rgb(230, 148, 94);
+    border-radius: 50px;
+    background-color: rgb(253, 234, 197);
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figure img {
+    border: 4px solid sienna;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+footer {
+    width: 100%;
+    padding-bottom: 30px;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    background-image: linear-gradient(rgb(236, 165, 95), peru);
+}
+
+.foot {
+    width: auto;
+    height: auto;
+    border: 2px;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
