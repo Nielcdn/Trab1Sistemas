@@ -2,7 +2,8 @@
 
 namespace App\Controllers;
 
-use App\Models\AutomoveisModel;
+use App\Models\UsuariosModel;
+use App\Models\LivrosModel;
 
 class Home extends BaseController
 {
@@ -37,15 +38,25 @@ class Home extends BaseController
     }
     public function menuUser():string
     {
+        $data = array(
+            'nome' => $this->request->getVar('nome'),
+            'email'=> $this->request->getVar('email'),
+            'senha'=> $this->request->getVar('senha')
+        );
+        print_r($data);
+        print_r($_POST);
 
         $my_model = new UsuariosModel();
         $result = $my_model->findAll();
+        print_r($result);
+        
 
-        //print_r($result);
-        $data['result'] = $result;
+        $my_model->insert($data);
 
-
-        return view('outra_view',$data);
+        print_r($data['nome']);
+        
+        
+        return view('menu',$data);
     }
 
 

@@ -4,17 +4,17 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class UsuariosModel extends Model
+class LivrosModel extends Model
 {
-    protected $table            = 'usuarios';
+    protected $table            = 'livros';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['nome','email','password'];
+    protected $allowedFields    = ['autores','título','ano','editora','password'];
 
-    protected bool $allowEmptyInserts = true;
+    protected bool $allowEmptyInserts = false;
 
     // Dates
     protected $useTimestamps = false;

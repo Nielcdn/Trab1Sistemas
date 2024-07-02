@@ -26,28 +26,9 @@
             <div class="menu"><a href="./publicar.html">Publique sua Arte</a></div>
             <div class="menu"><a href="./videos.html">Vídeos sobre Arte</a></div>
             <div class="menu"><a href="./galfixa.html">Galeria Fixa</a></div>
-            <div class="menu"><a href="./animacao.html">Animação</a></div>
     </nav>
     <main>
-        <form action="\menu" method="post">
-            <fieldset>
-                <legend>Formulário de Entrada</legend>
-                
-                    <label for="nome" class="form-label">Nome:</label>
-                    <input type="text"  id="nome">
-
-                    <label for="email" class="form-label">Email:</label>
-                    <input type="text"  id="email">
-
-                    <label for="senha" class="form-label">Senha:</label>
-                    <input type="password" id="senha">
-
-
-                <div>
-                    <button type="button">Entrar</button>
-                </div>
-            </fieldset>
-        </form>
+<h2>Seje Bem Vindo!!!!</h2>
     </main>
     <footer>
         <div class="foot">

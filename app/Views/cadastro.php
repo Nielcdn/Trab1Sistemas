@@ -40,10 +40,10 @@
                     <label for="senha" class="form-label">Senha:</label>
                     <input type="password" id="senha">
 
-                <div>
-                    <button type="button">Entrar</button>
-                </div>
-            </fieldset>
+
+
+            </fieldset>            
+            <button type="submit" name="submit">Entrar</button>
         </form>
     </main>
     <footer>
