@@ -3,7 +3,6 @@
 namespace App\Controllers;
 
 use App\Models\UsuariosModel;
-use App\Models\LivrosModel;
 
 class Home extends BaseController
 {
@@ -11,15 +10,12 @@ class Home extends BaseController
     {
         $data['variavel'] = "Conteudo do controller";
         $data['nickname'] = "LordWenzel1978";
+        $data['nome'] = "";
+        $this->session->set($data);
         return view('my_view',$data);
     }
 
     public function apresenta_formulario(): string
-    {
-        return view('formulario');
-    }
-
-    public function cadastro(): string
     {
         return view('cadastro');
     }
@@ -27,55 +23,43 @@ class Home extends BaseController
     public function telinha():string
     {
 
-        $my_model = new AutomoveisModel();
+        $my_model = new UsuariosModel();
         $result = $my_model->findAll();
 
         //print_r($result);
         $data['result'] = $result;
+        $meuarray = $this->session->get();
+        $data['nickname'] = $meuarray['nickname']; 
+        print_r($data['result'][0]['nome']);
 
+        $db      = \Config\Database::connect();
+        $builder = $db->table('usuarios');
+
+
+        $id = $builder->select('id', )->get()->getResult('array');
 
         return view('outra_view',$data);
     }
-    public function menuUser():string
-    {
-        $data = array(
-            'nome' => $this->request->getVar('nome'),
-            'email'=> $this->request->getVar('email'),
-            'senha'=> $this->request->getVar('senha')
-        );
-        print_r($data);
-        print_r($_POST);
-
-        $my_model = new UsuariosModel();
-        $result = $my_model->findAll();
-        print_r($result);
-        
-
-        $my_model->insert($data);
-
-        print_r($data['nome']);
-        
-        
-        return view('menu',$data);
-    }
-
 
     public function receiveData()
     {
         $data = array(
-            'marca' => $this->request->getVar('marca'),
-            'modelo' => $this->request->getVar('modelo'),
-            'km'=> $this->request->getVar('km'),
-            'ano'=> $this->request->getVar('ano'),
-            'preco' => $this->request->getVar('preco')
+            'nome' => $this->request->getVar('nome'),
+            'email' => $this->request->getVar('email'),
+            'senha'=> $this->request->getVar('senha'),
         );
-        
-        //print_r($data);
 
-        $my_model = new AutomoveisModel();
+        $my_model = new UsuariosModel();
         $my_model->insert($data);
 
-        return view('view_formulario',$data);
+        $this->session->set($data);
+
+        $this->session->setFlashdata('insertSuccess','Dados inseridos com sucesso');
+
+        
+        return redirect()->to('/menu');
+
+        //return view('view_formulario',$data);
     }
 
     public function deletarItem()
@@ -83,13 +67,13 @@ class Home extends BaseController
         $id = $this->request->getVar('id');
         $my_model = new AutomoveisModel();
         $my_model->delete($id);
-        return redirect()->to('tela'); 
+        return redirect()->to('menu'); 
     }
     
     public function deletarItemPorURL($num){
         $my_model = new AutomoveisModel();
         $my_model->delete($num);
-        return redirect()->to('tela'); 
+        return redirect()->to('menu'); 
 
     }
 
@@ -118,7 +102,10 @@ class Home extends BaseController
         $my_model = new AutomoveisModel();
         
         $result = $my_model->update($id_var,$data);
-        return redirect()->to('tela'); 
+        $this->session->setFlashdata('updateSuccess','Dados atualizados com sucesso');
+
+
+        return redirect()->to('menu'); 
 
     }
 
@@ -133,13 +120,12 @@ class Home extends BaseController
         $result = $builder->like('modelo', $mysearch)->get()->getResult('array');
 
     
-       $data['result'] = $result;
-       return view('outra_view',$data);
+        $data['result'] = $result;
+        $meuarray = $this->session->get();
+        $data['nickname'] = $meuarray['nickname']; 
+        return view('outra_view',$data);
     }
-    public function login(): string
-    {
-        return view('login');
-    }
+
 
 
 }

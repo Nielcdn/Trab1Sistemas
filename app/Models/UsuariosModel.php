@@ -12,9 +12,9 @@ class UsuariosModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['nome','email','password'];
+    protected $allowedFields    = ['nome','email','senha'];
 
-    protected bool $allowEmptyInserts = true;
+    protected bool $allowEmptyInserts = false;
 
     // Dates
     protected $useTimestamps = false;
