@@ -7,8 +7,10 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 $routes->get('/menu','Home::telinha');
-$routes->get('/formulario','Home::apresenta_formulario');
-$routes->post('/formreceivedata','Home::receiveData');
+$routes->get('/cadastro','Home::formCadastro');
+$routes->get('/login','Home::formLogin');
+$routes->post('/formRecebeCadastro','Home::recebeCadastro');
+$routes->post('/formRecebeLogin','Home::recebeLogin');
 $routes->get('/delete/(:num)','Home::deletarItemPorURL/$1');
 $routes->post('/delete','Home::deletarItem');
 $routes->post('/editform','Home::editarItem');
