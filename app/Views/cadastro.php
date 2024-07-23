@@ -40,7 +40,7 @@
             <div class="menu"><a href="./animacao.html">Animação</a></div>
     </nav>
     <main>
-    <form action="formreceivedata" method="post">
+    <form action="formRecebeCadastro" method="post">
   <div class="form-group">
     <div class="col-md-4 mb-3">
       <label for="nomeInputLabel">Nome:</label>
@@ -69,7 +69,7 @@
         </div>
         <div class="foot">
             <h2>Privacidade</h2>
-            <p>Qualquer informação fornecida para o site não irá, e não pode, ser compartilhado para terceiros.</p>
+            <p>Qualquer informação fornecida para o site não irá ser compartilhado para terceiros.</p>
         </div>
         <div class="foot">
             <h2>Termos de Serviço</h2>
