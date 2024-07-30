@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\UsuariosModel;
+use App\Models\LivrosModel;
 
 class Home extends BaseController
 {
@@ -12,7 +13,6 @@ class Home extends BaseController
         $data['nome'] = "";
         $data['email'] = "";
         $data['senha'] = "";
-        $data['adm'] = FALSE;
         $this->session->set($data);
         return redirect()->to('/menu');
     }
@@ -26,6 +26,16 @@ class Home extends BaseController
     {
         return view('login');
     }
+    public function formLogout()
+    {
+        session_destroy();
+        return redirect()->to('/');
+    }
+
+    public function formLivro()
+    {
+        return view('addLivro');
+    }
 
     public function telinha():string
     {
@@ -33,18 +43,38 @@ class Home extends BaseController
         $my_model = new UsuariosModel();
         $result = $my_model->findAll();
 
+        $livro_my_model = new LivrosModel();
+        $livro_result = $my_model->findAll();
+
         $data['result'] = $result;
+        $data['livro_result'] = $livro_result;
         $infoAtual = $this->session->get();
         $data['username'] = substr($infoAtual['email'],strpos($infoAtual['email'],'@')); 
         echo "<br>";
+
 
         $db = \Config\Database::connect();
         $builder = $db->table('usuarios');
 
         $id = $builder->select('email, senha')->get()->getResult('array');
         print_r(in_array(array('ewbriao1978@gmail.com'),$id));
-        print_r($id);
+        
         return view('menu',$data);
+    }
+
+    public function admin()
+    {
+        $my_model = new UsuariosModel();
+        $result = $my_model->findAll();
+
+        $data['result'] = $result;
+        $infoAtual = $this->session->get();
+        $data['username'] = substr($infoAtual['email'],strpos($infoAtual['email'],'@')); 
+
+        if (session()->get('admin')){
+            return view('adm',$data);
+        }
+        else return view('login',$data);
     }
 
     public function recebeCadastro()
@@ -52,7 +82,7 @@ class Home extends BaseController
         $data = array(
             'nome' => $this->request->getVar('nome'),
             'email' => $this->request->getVar('email'),
-            'senha'=> $this->request->getVar('senha'),
+            'senha'=> ($this->request->getVar('senha')),
         );
         $my_model = new UsuariosModel();
         $my_model->insert($data);
@@ -66,6 +96,7 @@ class Home extends BaseController
 
         //return view('view_formulario',$data);
     }
+    
 
     public function recebeLogin()
     {
@@ -77,11 +108,16 @@ class Home extends BaseController
         $db = \Config\Database::connect();
         $builder = $db->table('usuarios');
 
-        $id = $builder->select('email, senha')->where("email", $data['email'])->where("senha", $data['senha'])->get()->getResult('array');
+        $id = $builder->select('email, senha')->where('email', $data['email'])->where('senha', $data['senha'])->get()->getResult('array');
 
+        $data['nome'] = $builder->select('nome')->where('email', $data['email'])->where('senha', $data['senha'])->get()->getResult('array')[0];
         if (sizeof($id)!=0){
             $this->session->set($data);
-            if (in_array('ewbriao1978@gmail.com',$id[0]))
+            if (in_array('ewbriao1978@gmail.com',$id[0])){
+                $this->session->setFlashdata('adm','Você é um Administrador do site!!!!!!');
+                $data = ['admin' => TRUE];
+                $this->session->set($data);
+            }
 
             return redirect()->to('/menu');
         }
@@ -91,6 +127,27 @@ class Home extends BaseController
         }
         return redirect()->to('/menu');
 
+    }
+
+    public function recebeLivro()
+    {
+        $data = array(
+            'autores' => $this->request->getVar('autores'),
+            'titulo' => $this->request->getVar('titulo'),
+            'editora'=> ($this->request->getVar('editora')),
+            'quantDisp'=> ($this->request->getVar('quantDisp')),
+        );
+        $my_model = new LivrosModel();
+        $my_model->insert($data);
+
+        $this->session->set($data);
+
+        $this->session->setFlashdata('insertSuccess','Dados inseridos com sucesso');
+
+        
+        return redirect()->to('/menu');
+
+        //return view('view_formulario',$data);
     }
 
     public function deletarItem()
@@ -123,7 +180,7 @@ class Home extends BaseController
 
         $id_var = $this->request->getVar('id_for_updating');
         $data = array(
-            'marca' => $this->request->getVar('marca_edit'),
+            '' => $this->request->getVar('marca_edit'),
             'modelo' => $this->request->getVar('modelo_edit'),
             'km'=> $this->request->getVar('km_edit'),
             'ano'=> $this->request->getVar('ano_edit'),
@@ -145,10 +202,10 @@ class Home extends BaseController
 
 
         $db      = \Config\Database::connect();
-        $builder = $db->table('automoveis');
+        $builder = $db->table('usuarios');
 
 
-        $result = $builder->like('modelo', $mysearch)->get()->getResult('array');
+        $result = $builder->like('nome', $mysearch)->get()->getResult('array');
 
     
         $data['result'] = $result;
