@@ -17,7 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style><?php include 'visual.css';?></style>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <title>Adicionar Livro</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 </head>
 <body>
@@ -40,27 +40,38 @@
             <div class="menu"><a href="./animacao.html">Animação</a></div>
     </nav>
     <main>
-    <form action="formRecebeLogin" method="post">
+    <form action="formRecebeLivro" method="post">
   <div class="form-group">
     <div class="col-md-4 mb-3">
-      <label for="emailInputLabel">Email:</label>
-      <input type="text" class="form-control" id="emailInputLabel" name = "email">
+      <label for="autoresInputLabel">Autores:</label>
+      <input type="text" class="form-control" id="autoresInputLabel" name="autores">
     </div>
   </div>
   <div class="form-group">
     <div class="col-md-4 mb-3">
-      <label for="senhaInputLabel">Senha:</label>
-      <input type="password" class="form-control" id="senhaInputLabel" name="senha">
+      <label for="tituloInputLabel">Título:</label>
+      <input type="text" class="form-control" id="tituloInputLabel" name = "titulo">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-md-4 mb-3">
+      <label for="anoInputLabel">Ano:</label>
+      <input type="number" class="form-control" id="anoInputLabel" name="ano">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-md-4 mb-3">
+      <label for="editoraInputLabel">Editora:</label>
+      <input type="text" class="form-control" id="editoraInputLabel" name = "editora">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-md-4 mb-3">
+      <label for="quantDispInputLabel">Quantidade Disponível:</label>
+      <input type="text" class="form-control" id="quantDispInputLabel" name = "quantDisp">
     </div>
   </div>
   <button type="submit" class="btn btn-primary" name="submit">Submit</button>
-<?php  if (session()->get('erro')){
-    echo "<i>". session()->getFlashdata('erro') . "</i>";
-}
-if (session()->get('errologin')){
-  echo "<i>". session()->getFlashdata('login') . "</i>";
-}
-?>
 </form>
     </main>
     <footer>
@@ -70,7 +81,7 @@ if (session()->get('errologin')){
         </div>
         <div class="foot">
             <h2>Privacidade</h2>
-            <p>Qualquer informação fornecida para o site não irá, e não pode, ser compartilhado para terceiros.</p>
+            <p>Qualquer informação fornecida para o site não irá ser compartilhado para terceiros.</p>
         </div>
         <div class="foot">
             <h2>Termos de Serviço</h2>

@@ -31,7 +31,7 @@ if (session()->get('adm')){
     echo "<i>". session()->getFlashdata('adm') . "</i>";
 }
 ?>
-
+<h2><a href='/addLivro'>Adicionar Livro</a></h2>
 <h1> OUTRA VIEW <?=$username?>   </h1>
 
 <form action="/pesquisar" method="post">
@@ -40,20 +40,27 @@ if (session()->get('adm')){
     <button type="submit"  name="submit">Pequisar</button>
 </form>
 <br>
-<h1><a href="/adm" > Ir para Administração </a></h1>
 <h2> Dados </h2>
 
 <?php
-
+if (session()->get('admin')){
     
-    foreach ($livro_result as $row){
-        echo "autores:".$row['autores']."<br>";
-        echo "titulo:".$row['titulo']."<br>";
-        echo "ano:".$row['ano']."<br>";
-        echo "editora:".$row['editora']."<br>";
-        echo "quantDisp:".$row['quantDisp']."<br>";
+    foreach ($result as $row){
+        echo "id:".$row['id']. "<br>";
+        echo "nome:".$row['nome']."<br>";
+        echo "email:".$row['email']."<br>";
+        echo "senha:".$row['senha']."<br>";
                 
         ?>
+        <form action="delete" method="POST">
+        <input type="hidden" name="id" value="<?=$row['id'] ?>">
+        <button type="submit" name="submit">Remove via POST</button>
+        </form>
+
+        <form action="editform" method="POST">
+        <input type="hidden" name="id" value="<?=$row['id'] ?>">
+        <button type="submit" name="submit">Edit via POST</button>
+        </form>
 
         <br>
 
@@ -63,7 +70,7 @@ if (session()->get('adm')){
         
 <?php
     }
-
+}
 ?>
 
 
