@@ -25,20 +25,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <header>
-            <div class="logo"><a href="./menu.html"><img src="../img/logo.jpeg" alt="Logo do Site"></a></div>
-            <div class="banner"><h3><i>Expressar-se é a melhor forma de mudar o mundo!!</i></h3></div>
+    <div class="logo"><a href="/menu">Menu</a></div>
+    <div class="banner"><h3><i>Expressar-se é a melhor forma de mudar o mundo!!</i></h3></div>
     </header>
-    <nav>
-            <div class="menu"><a href="./menu.html">Menu Principal</a></div>
-            <div class="menu"><a href="./literatura.html">Literatura</a></div>
-            <div class="menu"><a href="./galeria.html">Galeria</a></div>
-            <div class="menu"><a href="./musica.html">Músicas</a></div>
-            <div class="menu"><a href="./autor.html">Autores</a></div>
-            <div class="menu"><a href="./publicar.html">Publique sua Arte</a></div>
-            <div class="menu"><a href="./videos.html">Vídeos sobre Arte</a></div>
-            <div class="menu"><a href="./galfixa.html">Galeria Fixa</a></div>
-            <div class="menu"><a href="./animacao.html">Animação</a></div>
-    </nav>
     <main>
     <form action="formRecebeCadastro" method="post">
   <div class="form-group">

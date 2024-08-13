@@ -17,7 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style><?php include 'visual.css';?></style>
     <meta charset="UTF-8">
-    <title>Adicionar Livro</title>
+    <title>Edição de Usuário</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 </head>
 <body>
@@ -37,39 +37,40 @@
         
         ?>
     </header>
+    <nav>
+            <div class="menu"><a href="./menu.html">Menu Principal</a></div>
+            <div class="menu"><a href="./literatura.html">Literatura</a></div>
+            <div class="menu"><a href="./galeria.html">Galeria</a></div>
+            <div class="menu"><a href="./musica.html">Músicas</a></div>
+            <div class="menu"><a href="./autor.html">Autores</a></div>
+            <div class="menu"><a href="./publicar.html">Publique sua Arte</a></div>
+            <div class="menu"><a href="./videos.html">Vídeos sobre Arte</a></div>
+            <div class="menu"><a href="./galfixa.html">Galeria Fixa</a></div>
+            <div class="menu"><a href="./animacao.html">Animação</a></div>
+    </nav>
     <main>
-    <form action="formRecebeLivro" method="post">
+    <form action="updateUsuario" method="post">
+    <input type="hidden" class="form-control" id="idInputLabel" name="id_for_updating" value="<?=$result['id']?>">
   <div class="form-group">
     <div class="col-md-4 mb-3">
-      <label for="autoresInputLabel">Autores:</label>
-      <input type="text" class="form-control" id="autoresInputLabel" name="autores">
+      <label for="nomeInputLabel">Nome:</label>
+      <input type="text" class="form-control" id="nomeInputLabel" name="nome_edit" value="<?=$result['nome']?>">
     </div>
   </div>
   <div class="form-group">
     <div class="col-md-4 mb-3">
-      <label for="tituloInputLabel">Título:</label>
-      <input type="text" class="form-control" id="tituloInputLabel" name = "titulo">
+      <label for="emailInputLabel">Email:</label>
+      <input type="text" class="form-control" id="emailInputLabel" name = "email_edit" value="<?=$result['email']?>">
     </div>
   </div>
   <div class="form-group">
     <div class="col-md-4 mb-3">
-      <label for="anoInputLabel">Ano:</label>
-      <input type="number" class="form-control" id="anoInputLabel" name="ano">
+      <label for="senhaInputLabel">Senha:</label>
+      <input type="password" class="form-control" id="senhaInputLabel" name="senha_edit">
     </div>
   </div>
-  <div class="form-group">
-    <div class="col-md-4 mb-3">
-      <label for="editoraInputLabel">Editora:</label>
-      <input type="text" class="form-control" id="editoraInputLabel" name = "editora">
-    </div>
-  </div>
-  <div class="form-group">
-    <div class="col-md-4 mb-3">
-      <label for="quantDispInputLabel">Quantidade Disponível:</label>
-      <input type="text" class="form-control" id="quantDispInputLabel" name = "quantDisp">
-    </div>
-  </div>
-  <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+  <button type="submit" class="btn btn-primary" name="submit">Confirmar</button><br><br>
+  <button type="reset" class="btn btn-primary" name="reset">Desfazer</button>
 </form>
     </main>
     <footer>

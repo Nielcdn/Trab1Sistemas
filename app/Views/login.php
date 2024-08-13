@@ -28,17 +28,6 @@
             <div class="logo"><a href="./menu.html"><img src="../img/logo.jpeg" alt="Logo do Site"></a></div>
             <div class="banner"><h3><i>Expressar-se é a melhor forma de mudar o mundo!!</i></h3></div>
     </header>
-    <nav>
-            <div class="menu"><a href="./menu.html">Menu Principal</a></div>
-            <div class="menu"><a href="./literatura.html">Literatura</a></div>
-            <div class="menu"><a href="./galeria.html">Galeria</a></div>
-            <div class="menu"><a href="./musica.html">Músicas</a></div>
-            <div class="menu"><a href="./autor.html">Autores</a></div>
-            <div class="menu"><a href="./publicar.html">Publique sua Arte</a></div>
-            <div class="menu"><a href="./videos.html">Vídeos sobre Arte</a></div>
-            <div class="menu"><a href="./galfixa.html">Galeria Fixa</a></div>
-            <div class="menu"><a href="./animacao.html">Animação</a></div>
-    </nav>
     <main>
     <form action="formRecebeLogin" method="post">
   <div class="form-group">
@@ -54,6 +43,8 @@
     </div>
   </div>
   <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+  <br><br>
+  <h4>Não tem uma conta? <a href="/cadastro">Inscreva-se já!</a></h4>
 <?php  if (session()->get('erro')){
     echo "<i>". session()->getFlashdata('erro') . "</i>";
 }
