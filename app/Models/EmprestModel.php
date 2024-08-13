@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class EmprestModel extends Model
 {
-    protected $table            = 'emprestimos';
+    protected $table            = 'emprest';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
